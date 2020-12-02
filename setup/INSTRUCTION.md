@@ -34,3 +34,7 @@ make sure your environment that installed and configured by requirement below,
     
 
 checking hostname, ip address, partition size, username available, and system tool that already installed.
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Kyuubang/nevacad-insa/master/setup/script.sh)"
+
+```
