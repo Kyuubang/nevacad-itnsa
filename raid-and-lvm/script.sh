@@ -8,16 +8,13 @@ then
 fi
 
 DATE=$(date +%Y-%m-%d)
-
 if [[ "$#" -ne 1 ]];
 then
-    echo "please enter your name"
-    echo "example : 'bayhaqi'"
-    exit 1
+    read -p "please enter your name : " NAME
 fi
 
 echo "===============" >> result.txt
-echo "Name : $1" >> result.txt
+echo "Name : $NAME" >> result.txt
 echo "Date : $DATE" >> result.txt
 echo "===============" >> result.txt
 
