@@ -1,0 +1,99 @@
+# lsblk output
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0  97,7M  1 loop /snap/core/10126
+loop1    7:1    0  97,8M  1 loop /snap/core/10185
+loop2    7:2    0  55,3M  1 loop /snap/core18/1885
+loop3    7:3    0  55,4M  1 loop /snap/core18/1932
+loop4    7:4    0 161,4M  1 loop /snap/gnome-3-28-1804/128
+loop5    7:5    0 162,9M  1 loop /snap/gnome-3-28-1804/145
+loop6    7:6    0 128,8M  1 loop /snap/google-cloud-sdk/159
+loop7    7:7    0 128,8M  1 loop /snap/google-cloud-sdk/160
+loop9    7:9    0  64,4M  1 loop /snap/gtk-common-themes/1513
+loop10   7:10   0 138,4M  1 loop /snap/inkscape/7947
+loop11   7:11   0 138,5M  1 loop /snap/inkscape/8049
+loop12   7:12   0   8,6M  1 loop /snap/nmap/1757
+loop13   7:13   0   8,6M  1 loop /snap/nmap/1849
+loop14   7:14   0  26,1M  1 loop /snap/taskbook/23
+loop15   7:15   0  64,8M  1 loop /snap/gtk-common-themes/1514
+sda      8:0    0 298,1G  0 disk 
+├─sda1   8:1    0  74,5G  0 part /
+├─sda2   8:2    0     1K  0 part 
+├─sda5   8:5    0   4,7G  0 part [SWAP]
+├─sda6   8:6    0 204,9G  0 part /home
+└─sda7   8:7    0    14G  0 part /data
+sdb      8:16   0 465,8G  0 disk 
+├─sdb1   8:17   0   200G  0 part /media/bayhaqi/backup
+├─sdb2   8:18   0   100G  0 part /media/bayhaqi/Athaya
+├─sdb3   8:19   0   100G  0 part /media/bayhaqi/bayhaqi
+└─sdb4   8:20   0  65,8G  0 part /media/bayhaqi/VMs
+
+# ip a output
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp4s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+    link/ether 44:87:fc:2b:a2:4f brd ff:ff:ff:ff:ff:ff
+3: wlp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 9c:b7:0d:87:a0:69 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.3.152/22 brd 10.0.3.255 scope global dynamic noprefixroute wlp2s0
+       valid_lft 2987sec preferred_lft 2987sec
+    inet6 fe80::3703:8111:2ec2:e42a/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+4: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.77.1/24 brd 172.16.77.255 scope global vmnet1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:1/64 scope link 
+       valid_lft forever preferred_lft forever
+5: vmnet4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:04 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.10.1/24 brd 192.168.10.255 scope global vmnet4
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:4/64 scope link 
+       valid_lft forever preferred_lft forever
+6: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 00:50:56:c0:00:08 brd ff:ff:ff:ff:ff:ff
+    inet 172.168.200.1/24 brd 172.168.200.255 scope global vmnet8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fec0:8/64 scope link 
+       valid_lft forever preferred_lft forever
+7: br-f9bd89d1ec94: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:9d:84:11:c9 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-f9bd89d1ec94
+       valid_lft forever preferred_lft forever
+8: br-4c15372ad25c: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:1c:c5:59:0d brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-4c15372ad25c
+       valid_lft forever preferred_lft forever
+9: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:c5:2e:f6:79 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+10: br-90818b05c27b: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:72:c1:02:a1 brd ff:ff:ff:ff:ff:ff
+    inet 172.23.0.1/16 brd 172.23.255.255 scope global br-90818b05c27b
+       valid_lft forever preferred_lft forever
+11: br-a8c2e5ea1bb7: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:1a:97:cc:9e brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-a8c2e5ea1bb7
+       valid_lft forever preferred_lft forever
+12: br-e5ccc015d7a9: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:b1:77:93:70 brd ff:ff:ff:ff:ff:ff
+    inet 172.21.0.1/16 brd 172.21.255.255 scope global br-e5ccc015d7a9
+       valid_lft forever preferred_lft forever
+13: br-f105b48e90d8: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:78:6f:50:46 brd ff:ff:ff:ff:ff:ff
+    inet 172.22.0.1/16 brd 172.22.255.255 scope global br-f105b48e90d8
+       valid_lft forever preferred_lft forever
+
+# hostname
+demo
+
+# username
+bayhaqi
+honey09
+lost+found
+
