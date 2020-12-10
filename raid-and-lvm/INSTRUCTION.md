@@ -10,4 +10,7 @@ make sure your installed VMs linux with 6 additional  virtual hard disk that eac
 
 * **and also make sure mountpoint not removed after rebooting** 
 
+```bash
+bash -c "$(https://raw.githubusercontent.com/Kyuubang/nevacad-insa/master/raid-and-lvm/script.sh)"
+```
 
