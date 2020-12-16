@@ -5,4 +5,4 @@
 [1]: https://github.com/Kyuubang
 [2]: linux-island.png (banner)
 
-repository for script automation checking
+repository of script automation checking
