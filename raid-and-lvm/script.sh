@@ -43,7 +43,7 @@ echo " " >> result.txt
 
 echo "checking multi disk ..."
 sleep 1
-TEST=$(which mdadm; echo $?)
+TEST=$(apt install -s mdadm &> /dev/null; echo $?)
 
 if [[ "$TEST" -eq 0 ]];
 then
