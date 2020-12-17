@@ -47,22 +47,28 @@ TEST=$(apt install -s mdadm &> /dev/null; echo $?)
 
 if [[ "$TEST" -eq 0 ]];
 then
-    echo "checking /dev/md0 ..."
+    echo "checking /dev/mdxx ..."
     sleep 1
-    mdadm --detail /dev/md0 >> result.txt
-    echo " " >> result.txt
-    echo "=================" >> result.txt
-    echo " " >> result.txt
-
-    echo "checking /dev/md2 ..."
-    sleep 1
-    mdadm --detail /dev/md2 >> result.txt
+    mdadm --detail /dev/md* >> result.txt
     echo " " >> result.txt
     echo "=================" >> result.txt
     echo " " >> result.txt
 else
     echo -e "\e[31mmdadm not installed\e[0m"
 fi
+
+echo "checking physical volume ..."
+sleep 1
+pvdisplay >> result.txt
+echo " " >> result.txt
+echo "=================" >> result.txt
+echo " " >> result.txt
+vgdisplay >> result.txt
+echo "=================" >> result.txt
+echo " " >> result.txt
+
+
+
 
 # finish
 echo " "
